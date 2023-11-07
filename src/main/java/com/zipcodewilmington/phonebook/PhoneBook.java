@@ -14,6 +14,9 @@ import java.util.Map;
 public class PhoneBook {
 
     private final Map<String, List<String>> phonebook;
+    private String name;
+
+    private String phoneNumber;
 
     public PhoneBook(Map<String, List<String>> map) {
         this.phonebook = null;
@@ -24,6 +27,7 @@ public class PhoneBook {
     }
 
     public void add(String name, String phoneNumber) {
+
     }
 
     public void addAll(String name, String... phoneNumbers) {
