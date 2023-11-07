@@ -22,7 +22,6 @@ public class PhoneBook {
 
     public void add(String name, String phoneNumber) {
         phonebook.put(name, Arrays.asList(phoneNumber));
-
     }
 
     public void addAll(String name, String... phoneNumbers) {
@@ -34,12 +33,15 @@ public class PhoneBook {
         phonebook.remove(name);
     }
 
-    public Boolean hasEntry(String name) {
-        return null;
+    public Boolean hasEntry(String name, String phoneNumber) {
+        if (phonebook.containsKey(name)) {
+            return true;
+        }
+        return false;
     }
 
     public List<String> lookup(String name) {
-        return null;
+        return phonebook.get(name);
     }
 
     public String reverseLookup(String phoneNumber)  {
@@ -51,6 +53,6 @@ public class PhoneBook {
     }
 
     public Map<String, List<String>> getMap() {
-        return null;
+        return this.phonebook;
     }
 }
