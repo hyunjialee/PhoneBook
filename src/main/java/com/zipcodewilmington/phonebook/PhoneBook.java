@@ -46,10 +46,12 @@ public class PhoneBook {
 
     public String reverseLookup(String phoneNumber)  {
         return null;
+        // Return a name with the name with the input of a phone number
     }
 
     public List<String> getAllContactNames() {
         return null;
+        // Return list of names from the entire phone book
     }
 
     public Map<String, List<String>> getMap() {
